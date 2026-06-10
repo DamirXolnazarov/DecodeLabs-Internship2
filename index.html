@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="DecodeLabs responsive web layout project with fluid typography, CSS grid, flexbox, and mobile-first media queries."
+    />
+    <title>DecodeLabs Responsive Web Layout</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="#top">DecodeLabs</a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Toggle navigation menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#resources">Resources</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero container">
+        <article class="hero-copy">
+          <p class="eyebrow">Project 2 · Responsive Web Layout</p>
+          <h1>Build a fluid digital experience that feels right on every screen.</h1>
+          <p class="lede">
+            This page uses a mobile-first foundation, CSS Grid for the layout shell,
+            Flexbox for content blocks, and media queries to shape the experience
+            from phone to desktop.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact">Start the journey</a>
+            <a class="button button-secondary" href="#resources">See the checklist</a>
+          </div>
+        </article>
+
+        <aside class="hero-card" aria-label="Project highlights">
+          <p class="card-label">Focus areas</p>
+          <ul class="highlight-list">
+            <li>Mobile-first base CSS</li>
+            <li>Accessible navigation targets</li>
+            <li>Fluid units with clamp()</li>
+            <li>Responsive grid + flex layouts</li>
+          </ul>
+          <div class="mini-stats">
+            <article>
+              <strong>4</strong>
+              <span>Breakpoints</span>
+            </article>
+            <article>
+              <strong>100%</strong>
+              <span>Touch-friendly</span>
+            </article>
+          </div>
+        </aside>
+      </section>
+
+      <section id="about" class="section container">
+        <div class="section-heading">
+          <p class="eyebrow">Why it matters</p>
+          <h2>Responsive habits that make a real product feel polished.</h2>
+        </div>
+
+        <div class="card-grid three-up">
+          <article class="card">
+            <h3>Flexible layout</h3>
+            <p>
+              The page uses CSS Grid for the macro layout and Flexbox for internal
+              alignment so content adapts smoothly from narrow to wide viewports.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Fluid type and spacing</h3>
+            <p>
+              Typography and spacing are scaled with clamp() and rem-based values for
+              a comfortable reading rhythm at every breakpoint.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Accessible interaction</h3>
+            <p>
+              The navigation button keeps an accessible label and an expanded state,
+              with touch-friendly targets for small screens.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section container">
+        <div class="panel-grid">
+          <article class="panel">
+            <p class="eyebrow">Skill stack</p>
+            <h2>Responsive design essentials in one page.</h2>
+            <ul class="check-list">
+              <li>Use media queries to change layout and navigation behavior.</li>
+              <li>Use percentages, rem, and clamp() for fluid sizing.</li>
+              <li>Keep content aligned with spacing, grids, and flex containers.</li>
+              <li>Test the flow on desktop, tablet, and mobile widths.</li>
+            </ul>
+          </article>
+
+          <article class="panel accent-panel">
+            <p class="eyebrow">Quick checklist</p>
+            <ol class="steps-list">
+              <li>Start with a mobile-first base style.</li>
+              <li>Turn the nav into a condensed action on small screens.</li>
+              <li>Expand layout with media queries at larger breakpoints.</li>
+              <li>Verify alignment, touch targets, and readability.</li>
+            </ol>
+          </article>
+        </div>
+      </section>
+
+      <section id="resources" class="section container">
+        <div class="section-heading">
+          <p class="eyebrow">Resources</p>
+          <h2>Helpful references for your next breakpoint.</h2>
+        </div>
+
+        <div class="resource-grid">
+          <article class="resource-card">
+            <h3>Fluid type scale</h3>
+            <p>Use clamp() and a simple ratio to create typography that grows naturally.</p>
+          </article>
+          <article class="resource-card">
+            <h3>Can I Use</h3>
+            <p>Check browser support before relying on newer layout and interaction features.</p>
+          </article>
+          <article class="resource-card">
+            <h3>Responsive navigation</h3>
+            <p>Reveal the menu as a popover on mobile and keep it inline on larger screens.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section container">
+        <article class="contact-card">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Let your next layout feel as good as it looks.</h2>
+            <p>
+              This project is designed to show how responsive logic can improve the
+              user experience on any device, from a phone in hand to a wide monitor.
+            </p>
+          </div>
+          <a class="button button-primary" href="mailto:decodelabs.tech@gmail.com">Email DecodeLabs</a>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-shell">
+        <p>DecodeLabs · Frontend Development Project 2</p>
+        <p>Responsive Web Layout</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
